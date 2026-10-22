@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    image: forma:latest
+    container_name: skoiptforma
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - forma-data:/data
+    ports:
+      - "8080:8000"  # сайт на хосте:8080, TLS-сертификат — на вашем веб-сервере/прокси
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/forms').read()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  forma-data:

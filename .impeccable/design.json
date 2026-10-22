@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T00:00:00Z",
+  "title": "Design System: Форма",
+  "extensions": {
+    "colorMeta": {
+      "ember": {
+        "role": "primary",
+        "displayName": "Ember",
+        "canonical": "oklch(0.55 0.165 34)",
+        "tonalRamp": [
+          "oklch(0.28 0.09 34)",
+          "oklch(0.38 0.13 34)",
+          "oklch(0.47 0.155 34)",
+          "oklch(0.55 0.165 34)",
+          "oklch(0.68 0.15 38)",
+          "oklch(0.82 0.10 40)",
+          "oklch(0.90 0.06 45)",
+          "oklch(0.96 0.02 50)"
+        ]
+      },
+      "daylight": {
+        "role": "neutral",
+        "displayName": "Daylight",
+        "canonical": "oklch(0.975 0.004 70)",
+        "tonalRamp": [
+          "oklch(0.18 0.012 45)",
+          "oklch(0.30 0.012 45)",
+          "oklch(0.46 0.012 45)",
+          "oklch(0.62 0.010 50)",
+          "oklch(0.78 0.008 55)",
+          "oklch(0.895 0.006 60)",
+          "oklch(0.955 0.006 60)",
+          "oklch(0.975 0.004 70)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.22 0 0)",
+          "oklch(0.36 0 0)",
+          "oklch(0.50 0 0)",
+          "oklch(0.64 0 0)",
+          "oklch(0.78 0 0)",
+          "oklch(0.90 0 0)",
+          "oklch(0.96 0 0)",
+          "oklch(1 0 0)"
+        ]
+      },
+      "quenched-green": {
+        "role": "tertiary",
+        "displayName": "Quenched Green",
+        "canonical": "oklch(0.55 0.11 160)",
+        "tonalRamp": [
+          "oklch(0.26 0.07 160)",
+          "oklch(0.38 0.10 160)",
+          "oklch(0.47 0.11 160)",
+          "oklch(0.55 0.11 160)",
+          "oklch(0.68 0.10 160)",
+          "oklch(0.82 0.08 160)",
+          "oklch(0.92 0.05 160)",
+          "oklch(0.97 0.02 160)"
+        ]
+      },
+      "fault": {
+        "role": "tertiary",
+        "displayName": "Fault",
+        "canonical": "oklch(0.55 0.17 25)",
+        "tonalRamp": [
+          "oklch(0.26 0.09 25)",
+          "oklch(0.38 0.13 25)",
+          "oklch(0.47 0.16 25)",
+          "oklch(0.55 0.17 25)",
+          "oklch(0.68 0.14 25)",
+          "oklch(0.82 0.10 25)",
+          "oklch(0.92 0.05 25)",
+          "oklch(0.97 0.02 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Один заголовок на экран."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Текст формы и значения ответов."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Подписи полей."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "ID, время, IP, служебные подписи."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-ambient",
+        "value": "0 1px 2px oklch(0.22 0.012 45 / 0.04), 0 24px 48px -32px oklch(0.22 0.012 45 / 0.25)",
+        "purpose": "Все панели."
+      },
+      {
+        "name": "cta-ambient",
+        "value": "0 8px 20px -12px oklch(0.55 0.165 34 / 0.85)",
+        "purpose": "Главная кнопка."
+      },
+      {
+        "name": "field-ambient",
+        "value": "0 1px 2px oklch(0.22 0.012 45 / 0.04)",
+        "purpose": "Поля ввода."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Все переходы состояния."
+      },
+      {
+        "name": "duration-state",
+        "value": "120-500ms",
+        "purpose": "Ответ на состояние; без хореографии входа."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "tonalGrid": [
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.9 0.0 30), oklch(0.945 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.77 0.0 30), oklch(0.945 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.64 0.0 30), oklch(0.945 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.51 0.0 30), oklch(0.945 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.38 0.0 30), oklch(0.945 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.985 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.977 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.969 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.961 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.953 0.0 30))",
+      "linear-gradient(oklch(0.25 0.0 30), oklch(0.945 0.0 30))"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Единственное главное действие экрана.",
+      "html": "<button class=\"ds-btn-primary\">Отправить</button>",
+      "css": ".ds-btn-primary{height:42px;padding:0 16px;border:0;border-radius:10px;background:oklch(0.55 0.165 34);color:oklch(1 0 0);font:500 14px Golos Text,system-ui,sans-serif;box-shadow:0 6px 18px -10px oklch(0.55 0.165 34/0.85);transition:background 200ms cubic-bezier(.25,1,.5,1),transform 200ms}.ds-btn-primary:hover{background:oklch(0.48 0.17 34)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid oklch(0.48 0.17 34);outline-offset:2px}.ds-btn-primary:disabled{opacity:.45}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Вторичное действие: CSV, «Заполнить ещё раз».",
+      "html": "<button class=\"ds-btn-outline\">Повторить</button>",
+      "css": ".ds-btn-outline{height:42px;padding:0 16px;border-radius:10px;border:1px solid oklch(0.895 0.006 60);background:transparent;color:oklch(0.22 0.012 45);font:500 14px Golos Text,system-ui,sans-serif;transition:background 200ms,border-color 200ms}.ds-btn-outline:hover{background:oklch(0.955 0.006 60);border-color:oklch(0.38 0.008 30)}.ds-btn-outline:focus-visible{outline:2px solid oklch(0.48 0.17 34);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Поле формы с подписью и состоянием ошибки.",
+      "html": "<label class=\"ds-label\" for=\"ds-in\">ФИО <span style=\"color:oklch(0.55 0.165 34)\">*</span></label><input id=\"ds-in\" class=\"ds-input\" placeholder=\"Иванов Иван Иванович\">",
+      "css": ".ds-label{display:block;margin-bottom:8px;font:500 13px Golos Text,system-ui,sans-serif;color:oklch(0.46 0.012 45)}.ds-input{width:100%;height:44px;border-radius:10px;border:1px solid oklch(0.895 0.006 60);background:oklch(1 0 0);color:oklch(0.22 0.012 45);padding:10px 14px;font:400 15px Golos Text,system-ui,sans-serif;transition:border-color 150ms}.ds-input::placeholder{color:oklch(0.46 0.012 45);opacity:.6}.ds-input:hover{border-color:oklch(0.38 0.008 30)}.ds-input:focus{outline:none;border-color:oklch(0.48 0.17 34)}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Поверхность для сводки и детали ответа.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-panel-head\">Готовность <span style=\"float:right;font-family:ui-monospace,monospace;font-size:12.5px;color:oklch(0.22 0.012 45)\">60%</span></div><div class=\"ds-panel-row\">ФИО</div></div>",
+      "css": ".ds-panel{border-radius:18px;border:1px solid oklch(0.895 0.006 60);background:oklch(1 0 0);color:oklch(0.22 0.012 45);overflow:hidden;font:400 14px Golos Text,system-ui,sans-serif}.ds-panel-head{padding:16px 20px;font-size:13px;color:oklch(0.46 0.012 45);border-bottom:1px solid oklch(0.895 0.006 60)}.ds-panel-row{padding:12px 20px;font-size:13.5px;border-bottom:1px solid oklch(0.895 0.006 60)}"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "description": "Пункт верхней навигации; активный — Forge Ink.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-on\" href=\"#\">Заполнить</a><a class=\"ds-nav-off\" href=\"#\">Админка ›</a></nav>",
+      "css": ".ds-nav{display:flex;gap:4px;font:500 13.5px Golos Text,system-ui,sans-serif}.ds-nav a{text-decoration:none;padding:6px 12px;border-radius:10px;transition:color 150ms}.ds-nav-on{color:oklch(0.22 0.012 45)}.ds-nav-off{color:oklch(0.46 0.012 45)}.ds-nav-off:hover{color:oklch(0.22 0.012 45)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Daylight Studio",
+    "overview": "Светлая рабочая поверхность студии утром: тёплая бумага, графитовый текст, тонкие линии вместо рамок и один раскалённый уголь — единственная кнопка, которую нельзя пропустить.",
+    "keyCharacteristics": [
+      "Светлая тёплая база, белые панели, графитовый текст",
+      "Один раскалённый акцент только на главном действии",
+      "Ритм через интервалы и линии",
+      "Моноширинный как маркер данных",
+      "Движение только как отклик на состояние"
+    ],
+    "rules": [
+      {
+        "name": "The One Ember Rule",
+        "body": "Раскалённый акцент занимает не более 10% любого экрана.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lit-Paper Rule",
+        "body": "Основной фон светлый: форма живёт в дневном контексте.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fact Rule",
+        "body": "Моноширинный шрифт только для значений, которые проверяются глазами как данные.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ambient Rule",
+        "body": "Тень — признак поверхности, а не состояния.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do держать всю сетку на 4px-шаге и токенах.",
+      "Do давать каждому интерактиву default, hover, focus-visible, active, disabled.",
+      "Do использовать Ember для одного действия на экран.",
+      "Do уважать prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't делать тёмный фон по умолчанию.",
+      "Don't добавлять гигантские hero-блоки и «SaaS-лендинг» на форму.",
+      "Don't использовать стеклянные карточки, градиентные заголовки и блобы.",
+      "Don't применять светло-бежевые «тёплые» AI-шаблоны.",
+      "Don't перегружать панель графиками ради графиков.",
+      "Don't ставить цветной border-left толще 1px или тени-«карточки в воздухе»."
+    ]
+  }
+}
