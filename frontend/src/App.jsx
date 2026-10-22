@@ -18,6 +18,8 @@ export function navigate(path) {
   window.dispatchEvent(new PopStateEvent('popstate'));
 }
 
+const TITLES = { admin: 'Админка — Формы' };
+
 function usePath() {
   const [path, setPath] = useState(() => window.location.pathname);
   useEffect(() => {
@@ -183,8 +185,15 @@ function Field({ field, value, error, onChange }) {
   );
 }
 
+function useTitle(title) {
+  useEffect(() => {
+    if (title) document.title = title;
+  }, [title]);
+}
+
 function Router() {
   const path = usePath();
+  useTitle(path.startsWith('/admin') ? TITLES.admin : null);
   if (path.startsWith('/admin')) return <AdminPage />;
   if (path !== '/') return <FormPage />;
   return <HomePage />;

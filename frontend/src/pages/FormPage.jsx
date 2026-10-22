@@ -54,7 +54,10 @@ export default function FormPage() {
         if (!match) throw new Error('Форма не найдена');
         return api.form(match.slug);
       })
-      .then(setForm)
+      .then((form) => {
+        setForm(form);
+        document.title = `${form.title} — Формы`;
+      })
       .catch((e) => setLoadError(e.message));
   }, []);
 

@@ -8,6 +8,7 @@ export default function HomePage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    document.title = 'Формы';
     api.forms().then(setForms).catch((e) => setError(e.message));
   }, []);
 
